@@ -54,6 +54,7 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  max-width: 800px;
 }
 
 .code {
@@ -108,9 +109,9 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.divider {
+ height: 2px; 
+ width: 100%;
+ margin-bottom: 4rem;
+ background-color: rgba(0,0,0,0.5);
 }
