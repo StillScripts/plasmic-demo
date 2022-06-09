@@ -20,6 +20,8 @@ The homepage is contained in `pages/index.tsx`. This page demonstrates the integ
 
 A full page demo is contained in `pages/plasmic.tsx`. This uses a Plasmic page for all the content on the page. 
 
+The page `pages/plasmic-host.tsx` is used for registering local components to the Plasmic project.
+
 The design I created in Plasmic is based on this [Apple page](https://www.apple.com/au/iphone-13-pro/)
 
 ## Live Demo
