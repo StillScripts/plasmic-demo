@@ -115,3 +115,9 @@
  margin-bottom: 4rem;
  background-color: #eaeaea;
 }
+
+.plasmic {
+  border: 2px solid rgba(19, 19, 139, 0.3);
+  padding: 16px;
+  border-radius: 4px;
+}

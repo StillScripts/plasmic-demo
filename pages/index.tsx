@@ -60,19 +60,24 @@ const Home: NextPage<PlasmicPageProps> = (props: {
         <h1 className={styles.title}>Welcome to the Plasmic demo!</h1>
 
         <p className={styles.description}>
-          Below is an example of a Hero section component inspired by Apple, 
-          created using Plasmic.
-          You can view a full page demo <Link href="/plasmic"><a>here</a></Link>.
+          Below is an example of a Hero section component inspired by Apple,
+          created using Plasmic. You can view a full page demo{" "}
+          <Link href="/plasmic">
+            <a>here</a>
+          </Link>
+          .
         </p>
         <div className={styles.divider}></div>
 
-        <PlasmicRootProvider
-          loader={PLASMIC}
-          prefetchedData={props.plasmicData}
-          prefetchedQueryData={props.queryCache}
-        >
-          <PlasmicComponent component="Hero" />
-        </PlasmicRootProvider>
+        <div className={styles.plasmic}>
+          <PlasmicRootProvider
+            loader={PLASMIC}
+            prefetchedData={props.plasmicData}
+            prefetchedQueryData={props.queryCache}
+          >
+            <PlasmicComponent component="Hero" />
+          </PlasmicRootProvider>
+        </div>
       </main>
 
       <footer className={styles.footer}>
@@ -85,6 +90,13 @@ const Home: NextPage<PlasmicPageProps> = (props: {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/StillScripts/plasmic-demo"
+        >
+          View on GitHub
         </a>
       </footer>
     </div>
